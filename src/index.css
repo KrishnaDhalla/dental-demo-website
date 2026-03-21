@@ -66,6 +66,15 @@ body {
   background: linear-gradient(-45deg, #0F0F1A, #032C28, #0B7A70, #1A1A2E);
   background-size: 400% 400%;
   animation: gradient-shift 12s ease infinite;
+  will-change: background-position;
+}
+
+@media (max-width: 767px) {
+  .hero-gradient {
+    animation: none;
+    background-size: 100% 100%;
+    background-position: 0% 50%;
+  }
 }
 
 /* Shine effect on cards */

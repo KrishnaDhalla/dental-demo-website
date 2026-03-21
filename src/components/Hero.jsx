@@ -24,9 +24,9 @@ export default function Hero() {
         }}
       />
 
-      {/* Glow blobs */}
-      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary-500/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-accent-400/10 rounded-full blur-[80px] pointer-events-none" />
+      {/* Glow blobs — desktop only (blur is expensive on mobile) */}
+      <div className="hidden md:block absolute top-1/3 right-1/4 w-96 h-96 bg-primary-500/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="hidden md:block absolute bottom-1/4 left-1/3 w-64 h-64 bg-accent-400/10 rounded-full blur-[80px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-32 md:py-44">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -119,8 +119,6 @@ export default function Hero() {
           />
           {/* Floating rating badge */}
           <motion.div
-            animate={{ y: [-5, 5, -5] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-6 -left-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 shadow-lg z-20"
           >
             <div className="flex gap-0.5 mb-1">
@@ -131,8 +129,6 @@ export default function Hero() {
           </motion.div>
           {/* Floating patients badge */}
           <motion.div
-            animate={{ y: [5, -5, 5] }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
             className="absolute bottom-8 -right-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 shadow-lg z-20"
           >
             <p className="text-white font-heading font-bold text-lg leading-none">{clinicData.stats[0].value}</p>
