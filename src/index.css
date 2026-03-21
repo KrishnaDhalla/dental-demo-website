@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-primary-50: #E6F7F5;
+  --color-primary-100: #B3E8E2;
+  --color-primary-200: #80D9CF;
+  --color-primary-300: #4DCABC;
+  --color-primary-400: #26BFA9;
+  --color-primary-500: #0D9488;
+  --color-primary-600: #0B7A70;
+  --color-primary-700: #086058;
+  --color-primary-800: #054640;
+  --color-primary-900: #032C28;
+
+  --color-accent-400: #F59E0B;
+  --color-accent-500: #D97706;
+
+  --color-dark-800: #1A1A2E;
+  --color-dark-900: #0F0F1A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #374151;
+  overflow-x: hidden;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-pulse {
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+/* Smooth transitions globally */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #0D9488 0%, #26BFA9 50%, #4DCABC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated gradient background for hero */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-gradient {
+  background: linear-gradient(-45deg, #0F0F1A, #032C28, #0B7A70, #1A1A2E);
+  background-size: 400% 400%;
+  animation: gradient-shift 12s ease infinite;
+}
+
+/* Shine effect on cards */
+@keyframes shine {
+  from { transform: translateX(-100%) skewX(-15deg); }
+  to { transform: translateX(200%) skewX(-15deg); }
+}
+
+.card-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+  transform: translateX(-100%) skewX(-15deg);
+}
+
+.card-shine:hover::after {
+  animation: shine 0.6s ease forwards;
+}
+
+/* Subtle text underline animation */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0D9488;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
