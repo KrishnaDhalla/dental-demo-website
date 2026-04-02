@@ -3,9 +3,9 @@ const clinicData = {
   tagline: "Where Every Smile Gets the Care It Deserves",
   description: "A modern multi-speciality dental clinic offering world-class treatment with a gentle, personalized approach.",
 
-  logo: "/assets/logo.png",
-  doctorImage: "/assets/doctor.png",
-  doctorPatientImage: "/assets/doctor-patient.png",
+  logo: "/assets/logo.webp",
+  doctorImage: "/assets/doctor.webp",
+  doctorPatientImage: "/assets/doctor-patient.webp",
 
   doctorName: "Dr. Abhijit Mahata",
   doctorCredentials: "BDS, MDS — Prosthodontics",
@@ -35,20 +35,20 @@ const clinicData = {
   ],
 
   services: [
-    { name: "Root Canal Treatment", description: "Painless, modern root canal therapy to save your natural tooth.", icon: "Crosshair", image: "/assets/service-root-canal.png" },
-    { name: "Dental Implants", description: "Permanent tooth replacement with titanium implants.", icon: "Pin", image: "/assets/service-implants.png" },
-    { name: "Teeth Whitening", description: "Professional whitening for a brighter, confident smile.", icon: "Sparkles", image: "/assets/service-whitening.png" },
-    { name: "Cosmetic Dentistry", description: "Veneers, bonding, and complete smile makeovers.", icon: "Smile", image: "/assets/service-cosmetic.png" },
-    { name: "Braces & Aligners", description: "Orthodontic solutions for perfectly aligned teeth.", icon: "AlignCenter", image: "/assets/service-braces.png" },
-    { name: "Dental Fillings", description: "Tooth-colored fillings that blend naturally.", icon: "Shield", image: "/assets/icon-dental-fillings.png" },
-    { name: "Crowns & Bridges", description: "Restore damaged or missing teeth with durable crowns.", icon: "Crown", image: "/assets/icon-crowns-bridges.png" },
-    { name: "Teeth Cleaning", description: "Deep scaling and polishing for healthy gums.", icon: "Droplets", image: "/assets/icon-teeth-cleaning.png" }
+    { name: "Root Canal Treatment", description: "Painless, modern root canal therapy to save your natural tooth.", icon: "Crosshair", image: "/assets/service-root-canal.webp" },
+    { name: "Dental Implants", description: "Permanent tooth replacement with titanium implants.", icon: "Pin", image: "/assets/service-implants.webp" },
+    { name: "Teeth Whitening", description: "Professional whitening for a brighter, confident smile.", icon: "Sparkles", image: "/assets/service-whitening.webp" },
+    { name: "Cosmetic Dentistry", description: "Veneers, bonding, and complete smile makeovers.", icon: "Smile", image: "/assets/service-cosmetic.webp" },
+    { name: "Braces & Aligners", description: "Orthodontic solutions for perfectly aligned teeth.", icon: "AlignCenter", image: "/assets/service-braces.webp" },
+    { name: "Dental Fillings", description: "Tooth-colored fillings that blend naturally.", icon: "Shield", image: "/assets/icon-dental-fillings.webp" },
+    { name: "Crowns & Bridges", description: "Restore damaged or missing teeth with durable crowns.", icon: "Crown", image: "/assets/icon-crowns-bridges.webp" },
+    { name: "Teeth Cleaning", description: "Deep scaling and polishing for healthy gums.", icon: "Droplets", image: "/assets/icon-teeth-cleaning.webp" }
   ],
 
   reviews: [
-    { name: "Sabyasachi", text: "A homely place where any dental issue gets resolved. Dr. Mahata and team are extremely professional.", rating: 5, image: "/assets/patient-sabyasachi.png" },
-    { name: "Sourav Jain", text: "One of the best places for dental work. Been coming here for 20 years and never disappointed.", rating: 5, image: "/assets/patient-sourav.png" },
-    { name: "Mala Das", text: "My entire family gets treatment here. Quality is great, staff is cordial. Highly recommended!", rating: 5, image: "/assets/patient-mala.png" }
+    { name: "Sabyasachi", text: "A homely place where any dental issue gets resolved. Dr. Mahata and team are extremely professional.", rating: 5, image: "/assets/patient-sabyasachi.webp" },
+    { name: "Sourav Jain", text: "One of the best places for dental work. Been coming here for 20 years and never disappointed.", rating: 5, image: "/assets/patient-sourav.webp" },
+    { name: "Mala Das", text: "My entire family gets treatment here. Quality is great, staff is cordial. Highly recommended!", rating: 5, image: "/assets/patient-mala.webp" }
   ],
 
   trustPoints: [

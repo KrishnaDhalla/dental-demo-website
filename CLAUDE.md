@@ -88,27 +88,37 @@ When adding/updating an asset:
 2. Copy it to `public/assets/`
 3. Update the path in `clinicData.js`
 
+### Image compression
+
+All images are compressed to WebP using Sharp (`scripts/compress-images.mjs`). When adding new assets:
+1. Place the original PNG/JPG in the source folder
+2. Run `node scripts/compress-images.mjs` to convert to WebP
+3. Update paths in `clinicData.js` to use `.webp` extension
+
 ### Current asset inventory
 
 | File | Used in |
 |------|---------|
-| `logo.png` | Navbar (transparent bg — shows on both dark + light) |
-| `doctor.png` | About section |
-| `doctor-patient.png` | Hero section (right column) |
-| `icon-root-canal.png` | Services card |
-| `icon-dental-implants.png` | Services card |
-| `service-whitening.png` | Services card |
-| `service-cosmetic.png` | Services card |
-| `service-braces.png` | Services card |
-| `icon-dental-fillings.png` | Services card |
-| `icon-crowns-bridges.png` | Services card |
-| `icon-teeth-cleaning.png` | Services card |
-| `patient-sabyasachi.png` | Testimonials |
-| `patient-sourav.png` | Testimonials |
-| `patient-mala.png` | Testimonials |
+| `logo.webp` | Navbar (transparent bg — shows on both dark + light) |
+| `doctor.webp` | About section |
+| `doctor-patient.webp` | Hero section (right column) |
+| `service-root-canal.webp` | Services card |
+| `service-implants.webp` | Services card |
+| `service-whitening.webp` | Services card |
+| `service-cosmetic.webp` | Services card |
+| `service-braces.webp` | Services card |
+| `icon-dental-fillings.webp` | Services card |
+| `icon-crowns-bridges.webp` | Services card |
+| `icon-teeth-cleaning.webp` | Services card |
+| `service-crowns.webp` | Services card |
+| `service-fillings.webp` | Services card |
+| `service-cleaning.webp` | Services card |
+| `patient-sabyasachi.webp` | Testimonials |
+| `patient-sourav.webp` | Testimonials |
+| `patient-mala.webp` | Testimonials |
 
 ### Navbar logo behaviour
-The logo PNG has a transparent background so it renders correctly on both:
+The logo WebP has a transparent background so it renders correctly on both:
 - Transparent dark hero (not scrolled)
 - Frosted glass white navbar (scrolled)
 
